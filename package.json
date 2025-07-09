@@ -1,13 +1,12 @@
 {
-  "homepage": "http://willnguyen23.github.io/ousase",
+  "homepage": "https://willnguyen23.github.io/ousase/",
   "name": "ousase",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "eslint .",
+    "build": "vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
@@ -30,5 +29,5 @@
     "typescript": "~5.8.3",
     "typescript-eslint": "^8.35.1",
     "vite": "^7.0.3"
-  } 
+  }
 }
