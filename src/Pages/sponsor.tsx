@@ -1,10 +1,10 @@
-import Header from '/src/Components/Header'
+import Header from '../Components/Header'
 
 export default function Sponsor() {
     return (
         <>
             <Header />
-            <h1>Sponsor</h1>
+
         </>
     )
 }

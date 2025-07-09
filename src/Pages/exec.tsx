@@ -1,6 +1,6 @@
-import Header from '/src/Components/Header'
-import Exec from '/src/Components/Exec'
-import Footer from '/src/Components/Footer'
+import Header from '../Components/Header'
+import Exec from '../Components/Exec'
+import Footer from '../Components/Footer'
 
 export default function ExecMembers() {
     return (

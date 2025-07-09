@@ -1,8 +1,8 @@
-import Header from '/src/Components/Header'
-import Carousel from '/src/Components/ImageCarousel'
-import About from '/src/Components/AboutSase'
-import Annoucements from '/src/Components/Annoucements'
-import Footer from '/src/Components/Footer'
+import Header from '../Components/Header'
+import Carousel from '../Components/ImageCarousel'
+import About from '../Components/AboutSase'
+import Annoucements from '../Components/Annoucements'
+import Footer from '../Components/Footer'
 
 export default function Home() {
     return (
