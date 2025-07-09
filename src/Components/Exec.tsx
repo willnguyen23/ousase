@@ -13,14 +13,14 @@ const memberImages: MemberImages[] = [
         id: "daniel",
         num: 1,
         alt: "daniel park - president",
-        src: "../Images/daniel.png",
+        src: "./Images/daniel.png",
         info: ["Daniel Park", "President", "Chemical Engineering", "Junior"]
     }, 
     {
         id: "ian",
         num: 2,
         alt: "ian dang - vpx",
-        src: "../Images/ian.png",
+        src: "./Images/ian.png",
         info: ["Ian Dang", "Vice President External", "Computer Science", "Junior"]
     },
     {
@@ -34,14 +34,14 @@ const memberImages: MemberImages[] = [
         id: "sarah",
         num: 4,
         alt: "sarah kim - secretary",
-        src: "../Images/sarah.png",
+        src: "./Images/sarah.png",
         info: ["Sarah Kim", "Secretary", "Chemical Biosciences", "Junior"]
     }, 
     {
         id: "josh",
         num: 5,
         alt: "josh tu - finance",
-        src: "../Images/blank.png",
+        src: "./Images/blank.png",
         info: ["Joshua Tu", "Director of Finance", "Computer Engineering", "Junior"]
     }, 
     {
@@ -69,7 +69,7 @@ const memberImages: MemberImages[] = [
         id: "don",
         num: 9,
         alt: "don dao - graphics",
-        src: "../Images/blank.png",
+        src: "./Images/blank.png",
         info: ["Don Dao", "Graphic Designer", "Information Science and Technology", "Senior"]
     }, 
     {
