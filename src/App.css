@@ -1,0 +1,305 @@
+/* General for every page */
+  body {
+    padding: 0px;
+    margin: 0px;
+    background-color: rgb(255, 255, 255);
+  }
+/* General for every page */
+
+/* Header Style */
+  .navbar-button {
+    width: 80%;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    gap: 60px;
+  }
+
+  .logo {
+    width: 10%;
+  }
+
+  .ou-sase-logo {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-self: center;
+    align-content: center;
+    object-fit: contain;
+  }
+
+  button {
+    height: 50px;
+    width: 12rem;
+    color: white;
+    border-style: none;
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    justify-self: center;
+  }
+
+  button:hover {
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-shadow: rgb(70, 65, 65);
+  }
+
+  .empty-space {
+    width: 10%;
+  }
+
+  .header-container {
+    background-color: black;
+    padding-bottom: 0px;
+    margin-bottom: 0;
+    display: flex;
+  }
+/* Header Style */
+
+/*Carousel logic*/
+  @layer demo {
+    .carousel {
+    --items: 3;
+    --carousel-duration: 40s;
+    @media (width > 600px) {
+        --carousel-duration: 30s;
+    }
+    --carousel-width: 100vw; /* note - it will "break" if it gets too wide and there aren't enough items */
+        --carousel-height: 70vh;
+    --carousel-item-width: 100vw;
+    --carousel-item-height: 70vh;
+    --carousel-item-gap: 3rem;
+
+    --clr-cta: rgb(0, 132, 209);
+
+    position: relative;
+    width: var(--carousel-width);
+    height: var(--carousel-height);
+    overflow: clip;
+
+    /* fade out on sides */
+        mask-image: linear-gradient(
+        to right,
+        transparent,
+        black 10% 90%,
+        transparent
+    );
+    
+
+    &[reverse] > article {
+        animation-direction: reverse;
+    }
+    
+    }
+    .carousel > article {
+    position: absolute;
+    top: 0;
+    left: calc(100% + var(--carousel-item-gap));
+    width: var(--carousel-item-width);
+    height: var(--carousel-item-height);
+    display: grid;
+    grid-template-rows: 200px auto 1fr auto;
+    gap: 3rem;
+    border: 1px solid light-dark(rgba(0 0 0 / 0.25), rgba(255 255 255 / 0.15));
+
+    padding-block-end: 1rem;
+    border-radius: 10px;
+    background: transparent;
+    color: light-dark(rgb(49, 65, 88), white);
+
+    /* animation */
+    will-change: transform;
+    animation-name: marquee;
+    animation-duration: var(--carousel-duration);
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: calc(
+        var(--carousel-duration) / var(--items) * 1 * var(--i) * -1
+    );
+    &:nth-child(1) {
+        --i: 0;
+    }
+    &:nth-child(2) {
+        --i: 1;
+    }
+    &:nth-child(3) {
+        --i: 2;
+    }
+    &:nth-child(4) {
+        --i: 3;
+    }
+    &:nth-child(5) {
+        --i: 4;
+    }
+    &:nth-child(6) {
+        --i: 5;
+    }
+    }
+
+    .carousel img {
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    }
+
+    @keyframes marquee {
+    100% {
+        transform: translateX(
+        calc(
+            (var(--items) * (var(--carousel-item-width) + var(--carousel-item-gap))) *
+            -1
+        )
+        );
+    }
+    }
+  }
+
+  .carousel-style {
+    position: relative;
+    padding-bottom: 0.5%;
+    padding-top: 0.5%;
+  }
+/*End carousel styling logic */
+
+
+/*Start of about SASE (Video & Mission) */
+  .about-sase {
+    display: flex;
+    align-items: center;
+  }
+
+  .sase-merch-video {
+      width: 50%;
+      padding-right: 2%;
+      display: flex;
+      justify-content: center;
+  }
+
+  .sase-merch-video > video {
+      overflow: hidden;
+      padding-left: 10%;
+      object-fit: contain;
+  }
+
+  .sase-mission {
+      height: 50%;
+      border-radius: 20px;
+  }
+/*End of about SASE (Video & Mission) */
+
+/* Start of Annoucements */
+  .annoucements {
+      display: flex;
+      padding: 2%;
+  }
+  
+  .news {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+  }
+  .text-box {
+      justify-content: center;
+      align-self: center;
+      width: 35%;
+      height: 90%;
+      margin-left: 2%;
+      margin-right: 2%;
+      padding: 10px;
+      border-radius: 10px;
+      border-style: dashed;
+  }
+  
+  .text-box > h1 {
+      justify-self: center;
+      background-color: white;
+      border-radius: 20px;
+  }
+/* End of Annoucements */
+
+/* Footer Style */
+  .footer-container {
+    display: flex;
+    width: 100%;
+    background-color: black;
+    justify-content: center;
+  }
+
+  /* Start of socials */
+  .socials {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+  }
+
+  .social-logos {
+    height: 50%;
+    padding: 20px;
+  }
+
+  .social-logos:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+  }
+    
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+/* Footer Style */
+
+/* Start of Exec Body */
+  .img-section {
+    width: 80%;
+    display: inline;
+    height: auto;
+    justify-self: center;
+    justify-content: center;
+    border-color: black;
+    border-left-style: solid;
+    border-right-style: solid;
+    margin-top: 0px;
+  }
+
+  .img-row {
+    width: 80%;
+    justify-self: center;
+    padding: 1%;
+  }
+
+  .img-indiv {
+    display: grid;
+    justify-items: center;
+    padding: 2%;
+    overflow: hidden;
+    transition: max-height 0.4s ease, opacity 0.4s ease,
+  }
+
+  .img-row > img {
+    min-width: 80%;
+    width: 80%;
+    height: auto;
+    cursor: pointer;
+    position: absolute;
+    transition: max-height 0.4s ease, opacity 0.4s ease,
+  }
+
+  .info-container {
+    display: block;
+    justify-items: center;
+  }
+/* End of Exec Body */
+
+
