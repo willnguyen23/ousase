@@ -6,7 +6,7 @@ export default function Carousel() {
                     <div>
                         <div className="carousel">
                             <article>
-                                <img src="/ousase/assetsImages/finalGBM2025.jpg" alt="final-gbm" />
+                                <img src="/ousase/assets/Images/finalGBM2025.jpg" alt="final-gbm" />
                             </article>
 
                             <article>
