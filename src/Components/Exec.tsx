@@ -13,112 +13,112 @@ const memberImages: MemberImages[] = [
         id: "daniel",
         num: 1,
         alt: "daniel park - president",
-        src: "/ousase/assets/Images/daniel.png",
+        src: "./src/Images/daniel.png",
         info: ["Daniel Park", "President", "Chemical Engineering", "Junior"]
     }, 
     {
         id: "ian",
         num: 2,
         alt: "ian dang - vpx",
-        src: "/ousase/assets/Images/ian.png",
+        src: "./src/Images/ian.png",
         info: ["Ian Dang", "Vice President External", "Computer Science", "Junior"]
     },
     {
         id: "donald",
         num: 3,
         alt: "donald nguyen - vpi",
-        src: "/ousase/assets/Images/donald.png",
+        src: "./src/Images/donald.png",
         info: ["Donald Nguyen", "Vice President Internal", "Management Information Systems", "Senior"]
     }, 
     {
         id: "sarah",
         num: 4,
         alt: "sarah kim - secretary",
-        src: "/ousase/assets/Images/sarah.png",
+        src: "./src/Images/sarah.png",
         info: ["Sarah Kim", "Secretary", "Chemical Biosciences", "Junior"]
     }, 
     {
         id: "josh",
         num: 5,
         alt: "josh tu - finance",
-        src: "/ousase/assets/Images/blank.png",
+        src: "./src/Images/blank.png",
         info: ["Joshua Tu", "Director of Finance", "Computer Engineering", "Junior"]
     }, 
     {
         id: "janes",
         num: 6,
         alt: "janes le - community",
-        src: "/ousase/assets/Images/janes.png",
+        src: "./src/Images/janes.png",
         info: ["Janes Le", "Community Chair", "Computer Engineering", "Junior"]
     },
     {
         id: "dylan",
         num: 7,
         alt: "dylan quan - community",
-        src: "/ousase/assets/Images/blank.png",
+        src: "./src/Images/blank.png",
         info: ["Dylan Quan", "Community Chair", "Industrial and Systems Engineering", "Senior"]
     }, 
     {
         id: "anson",
         num: 8,
         alt: "anson tang - marketing",
-        src: "/ousase/assets/Images/anson.png",
+        src: "./src/Images/anson.png",
         info: ["Anson Tang", "Marketing Director", "Mechanical Engineering", "Junior"]
     }, 
     {
         id: "don",
         num: 9,
         alt: "don dao - graphics",
-        src: "/ousase/assets/Images/blank.png",
+        src: "./src/Images/blank.png",
         info: ["Don Dao", "Graphic Designer", "Information Science and Technology", "Senior"]
     }, 
     {
         id: "angela",
         num: 10,
         alt: "angela vu - creative",
-        src: "/ousase/assets/Images/blank.png",
+        src: "./src/Images/blank.png",
         info: ["Angela Vu", "Creative Chair", "Computer Engineering", "Sophomore"]
     },
     {
         id: "melissa",
         num: 11,
         alt: "melissa ng - marketing asst",
-        src: "/ousase/assets/Images/melissa.png",
+        src: "./src/Images/melissa.png",
         info: ["Melissa Ng", "Marketing Assistant", "Computer Science", "Senior"]
     }, 
     {
         id: "bea",
         num: 12,
         alt: "bea nazareno - intern coor",
-        src: "/ousase/assets/Images/blank.png",
+        src: "./src/Images/blank.png",
         info: ["Bea Nazareno", "Intern Coordinator", "Biomedical Engineering", "Senior"]
     }, 
     {
         id: "will",
         num: 13,
         alt: "william nguyen - intern coor.",
-        src: "/ousase/assets/Images/blank.png",
+        src: "./src/Images/blank.png",
         info: ["William Nguyen", "Intern Coordinator", "Computer Engineering", "Junior"]
     }, 
     {
         id: "jet",
         num: 14,
         alt: "jet flener - event coor.",
-        src: "/ousase/assets/Images/blank.png",
+        src: "./src/Images/blank.png",
         info: ["Jet Flener", "Event Coordinator", "Computer Engineering", "Junior"]
     },
     {
         id: "carina",
         num: 15,
         alt: "carina chen - event coor.",
-        src: "/ousase/assets/Images/blank.png",
+        src: "./src/Images/blank.png",
         info: ["Carina Chen", "Event Coordinator", "Biology (Pre-Dent)", "Sophomore"]
     }, 
     {
         id: "grace",
         num: 16,
         alt: "grace chaing - science chair",
-        src: "/ousase/assets/Images/blank.png",
+        src: "./src/Images/blank.png",
         info: ["Grace Chiang", "Science Chair", "Pre-Nursing", "Sophomore"]
     }, 
 ]
