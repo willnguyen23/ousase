@@ -6,27 +6,27 @@ export default function Carousel() {
                     <div>
                         <div className="carousel">
                             <article>
-                                <img src="./finalGBM2025.jpg" alt="final-gbm" />
+                                <img src="Images/finalGBM2025.jpg" alt="final-gbm" />
                             </article>
 
                             <article>
-                                <img src="./gbmFour.jpg" alt="sase-gbm4" />
+                                <img src="Images/gbmFour.jpg" alt="sase-gbm4" />
                             </article>
 
                             <article>
-                                <img src="./saseNatcon2025.jpg" alt="sase-natcon25" />
+                                <img src="Images/saseNatcon2025.jpg" alt="sase-natcon25" />
                             </article>
 
                             <article>
-                                <img src="./saseVolunteer.jpg" alt="saseunteer" />
+                                <img src="Images/saseVolunteer.jpg" alt="saseunteer" />
                             </article>
 
                             <article>
-                                <img src="./saseLNY.jpg" alt="sase-lny" />
+                                <img src="Images/saseLNY.jpg" alt="sase-lny" />
                             </article>
 
                             <article>
-                                <img src="./saseHalloween.jpg" alt="saseoween" />
+                                <img src="Images/saseHalloween.jpg" alt="saseoween" />
                             </article>
                         </div>
                     </div>
