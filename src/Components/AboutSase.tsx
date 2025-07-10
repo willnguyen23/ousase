@@ -3,7 +3,7 @@ export default function AboutSase() {
         <>
             <section className="about-sase">
                 <div className="sase-merch-video">
-                    <video src="./src/Images/sase-vid.mp4" loop autoPlay muted/>
+                    <video src="Images/sase-vid.mp4" loop autoPlay muted/>
                 </div>
                 <div className="sase-mission">
                     <h1>What is SASE's mission?</h1>
