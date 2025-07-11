@@ -166,7 +166,7 @@ export default function Members() {
                                 src={member.src}
                                 alt={member.alt}
                                 style={{ width: '100%', cursor: 'pointer', borderRadius: '8px' }}
-                                onMouseOver={() => handleClick(groupIndex, member)}
+                                onClick={() => handleClick(groupIndex, member)}
                             />
                         ))}
                     </div>
