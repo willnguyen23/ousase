@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom"
+import Logo from 'Images/ou-sase-logo.png'
 
 export default function Header() {
     return (
         <header className="header-container">
             <div className="logo">
                 <a href="https://www.saseconnect.org/" target="_blank">
-                    <img src="Images/ou-sase-logo.png" className="ou-sase-logo" alt="ou sase logo" />
+                    <img src={Logo} className="ou-sase-logo" alt="ou sase logo" />
                 </a> 
             </div>
             <div className="navbar-button">
