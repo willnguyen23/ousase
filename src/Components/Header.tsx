@@ -8,11 +8,11 @@ export default function Header() {
                     <img src="./Images/ou-sase-logo.png" className="ou-sase-logo" alt="ou sase logo" />
                 </a> 
             </div>
-            <div className="navbar-button">
-                <Link to="/exec"><button><b>2026 Executive Board</b></button></Link>
-                <Link to="/"><button><b>Home</b></button></Link>
-                <Link to="/sponsor"><button><b>Sponsors</b></button></Link>
-            </div>
+                <div className="navbar-button">
+                    <Link to="/exec"><button><b>2026 Executive Board</b></button></Link>
+                    <Link to="/"><button><b>Home</b></button></Link>
+                    <Link to="/sponsor"><button><b>Sponsors</b></button></Link>
+                </div>
             <div className="empty-space">
 
             </div>
