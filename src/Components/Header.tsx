@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import Toggle from '../Components/Toggle'
 
 export default function Header() {
     return (
@@ -14,16 +15,7 @@ export default function Header() {
                     <Link to="/sponsor"><button><b>Sponsors</b></button></Link>
                 </div>
             <div className="empty-space">
-                <button id="menu-toggle">☰ Menu</button>
-                <nav id="menu" className="hidden">
-                    <ul>
-                        <li><Link to="/exec"><button><b>2026 Executive Board</b></button></Link></li>
-                        <li><Link to="/"><button><b>Home</b></button></Link></li>
-                        <li><Link to="/sponsor"><button><b>Sponsors</b></button></Link></li>
-                    </ul>
-                </nav>
-
-                <script src="../Components/toggle.ts"></script>
+                <Toggle />
             </div>
         </header>  
     )

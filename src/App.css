@@ -15,7 +15,7 @@
     gap: 60px;
   }
 
-  #menu-toggle {
+  .dropdown {
     display: none;
   }
 
@@ -389,6 +389,42 @@
     font-size: 12px;
     letter-spacing: 2px;
     text-shadow: rgb(70, 65, 65);
+  }
+
+  .dropdown {
+    display: inline-block;
+    position: relative;
+  }
+
+  .dropdown-toggle {
+    width: 100%;
+    cursor: pointer;
+  }
+
+  .dropdown-toggle:active {
+    width: 100%;
+    cursor: pointer;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-shadow: rgb(70, 65, 65);
+  }
+
+  .dropdown-menu {
+    position: absolute;
+    background-color: black;
+    top: 100%;
+    left: 0;
+    min-width: 160px;
+    z-index: 1;
+    padding: 0;
+    margin-top: 4px;
+    border-radius: 4px;
+  }
+  
+  .dropdown-menu li {
+    list-style: none;
+    width: 100%;
+    cursor: pointer;
   }
 
   .header-container {
