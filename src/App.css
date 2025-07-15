@@ -511,7 +511,7 @@
       display: none;
     }
 
-    #menu-toggle:focus + .hidden {
+    #menu-toggle:active + .hidden {
       display: block;
     }
 }
