@@ -123,9 +123,10 @@ const memberImages: MemberImages[] = [
     }, 
 ]
 
+
 export default function Members() { 
     // Utility to chunk an array into groups of a given size
-    const chunkArray = <T,>(arr: T[], size: number): T[][] => {
+    const chunkArray = <T,>(arr:T[], size:number) => {
         const chunks: T[][] = [];
 
         for (let i = 0; i < arr.length; i += size) {
@@ -134,14 +135,13 @@ export default function Members() {
 
         return chunks;
     };
-
-    let rowNumber: number = window.innerWidth < 600 ? 2 : 4;
-  
-    const imageGroups = chunkArray(memberImages, rowNumber);
-    const [activeGroupIndex, setActiveGroupIndex] = useState<number | null>(null);        
+    
+    const rowAmount: number = window.innerWidth < 600 ? 2 : 4;
+    const imageGroups = chunkArray(memberImages, rowAmount);
+    const [activeGroupIndex, setActiveGroupIndex] = useState<number | null>(null);
     const [activeMember, setActiveMember] = useState<MemberImages | null>(null);
     
-    const handleClick = (groupIndex: number, member: MemberImages) => {
+    const handleClick = (groupIndex:number, member:MemberImages): void => {
         if (activeGroupIndex === groupIndex && activeMember?.id === member.id) {
             // If the same image is clicked again, close it
             setActiveGroupIndex(null);
@@ -156,37 +156,38 @@ export default function Members() {
     return (
         <div className = "img-section">
             {imageGroups.map((group, groupIndex) => (
-                <div key={groupIndex} className = "img-row">                        
+                <div key={groupIndex} className = "img-row">
                     <div style={{
-                            display: 'grid',
-                            gridTemplateColumns: '4, 1fr)',
-                            gap: '5px',
-                        }}>
-                        {group.map(member => (
-                            <img
-                                className="member-images"
-                                key={member.id}
-                                src={member.src}
-                                alt={member.alt}
-                      //          style={{ width: '100%', cursor: 'pointer', borderRadius: '8px' }}
-                                onClick={() => handleClick(groupIndex, member)}
-                            />
-                        ))}
-                    </div>
-                    {activeGroupIndex === groupIndex && activeMember && (
-                        <div style={{
-                            marginTop: '15px',
-                            padding: '20px',
-                            backgroundColor: '#f9f9f9',
-                            border: '1px solid #ddd',
-                            borderRadius: '6px',
-                        }} className = "info-container">
+                        display: 'grid',
+                        gridTemplateColumns: 'repeat(4, 1fr)',
+                        gap: '15px',
+                    }}>
+                    {group.map(member => (
+                        <img
+                            key={member.id}
+                            src={member.src}
+                            alt={member.alt}
+                            style={{ width: '100%', cursor: 'pointer', borderRadius: '8px' }}
+                            onMouseOver={() => handleClick(groupIndex, member)}
+                        />
+                    ))}
+                </div>
+    
+                {activeGroupIndex === groupIndex && activeMember && (
+                    <div style={{
+                        marginTop: '15px',
+                        padding: '20px',
+                        backgroundColor: '#f9f9f9',
+                        border: '1px solid #ddd',
+                        borderRadius: '6px',
+                    }} 
+                        className = "info-container">
                             <h1>{activeMember.info[0]}</h1>
                             <p><strong>Position:</strong> {activeMember.info[1]}</p>
                             <p><strong>Major:</strong> {activeMember.info[2]}</p>
-                            <p><strong>Year:</strong> {activeMember.info[3]}</p>
-                        </div>
-                    )}
+                            <p><strong>Year:</strong> {activeMember.info[3]}</p>                                                   
+                    </div>
+                )}
                 </div>
             ))}
         </div>

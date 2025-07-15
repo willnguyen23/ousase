@@ -264,48 +264,46 @@
   }
 
 /* Footer Style */
-
 /* Start of Exec Body */
-  .img-section {
-    width: 90%;
-    display: block;
-    height: auto;
-    justify-self: center;
-    justify-content: center;
-    border-color: black;
-    border-left-style: solid;
-    border-right-style: solid;
-    margin-top: 0px;
-  }
+.img-section {
+  width: 90%;
+  display: block;
+  height: auto;
+  justify-self: center;
+  justify-content: center;
+  border-color: black;
+  border-left-style: solid;
+  border-right-style: solid;
+  margin-top: 0px;
+}
 
-  .img-row {
-    width: 90%;
-    justify-self: center;
-    padding: 1%;
-  }
+.img-row {
+  width: 80%;
+  justify-self: center;
+  padding: 1%;
+}
 
-  .img-indiv {
-    display: grid;
-    justify-items: center;
-    padding: 2%;
-    overflow: hidden;
-    transition: max-height 0.4s ease, opacity 0.4s ease,
-  }
+.img-indiv {
+  display: grid;
+  justify-items: center;
+  padding: 2%;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.4s ease,
+}
 
-  .img-row > img {
-    min-width: 80%;
-    width: 80%;
-    height: auto;
-    cursor: pointer;
-    position: absolute;
-    transition: max-height 0.4s ease, opacity 0.4s ease,
-  }
+.img-row > img {
+  min-width: 80%;
+  width: 80%;
+  height: auto;
+  cursor: pointer;
+  position: absolute;
+  transition: max-height 0.4s ease, opacity 0.4s ease,
+}
 
-  .info-container {
-    display: block;
-    justify-items: center;
-  }
-
+.info-container {
+  display: block;
+  justify-items: center;
+}
 /* End of Exec Body */
 
 /* Toggle */
@@ -507,7 +505,6 @@
     border-left-style: solid;
     border-right-style: solid;
     margin-top: 0px;
-    background-color: green;
   }
 
   .img-row {
