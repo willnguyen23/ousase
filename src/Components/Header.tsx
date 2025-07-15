@@ -23,7 +23,7 @@ export default function Header() {
                     </ul>
                 </nav>
 
-                <script src="toggle.ts"></script>
+                <script src="../Components/toggle.ts"></script>
             </div>
         </header>  
     )
