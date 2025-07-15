@@ -134,8 +134,10 @@ export default function Members() {
 
         return chunks;
     };
+
+    let rowNumber: number = window.innerWidth < 600 ? 2 : 4;
   
-    const imageGroups = chunkArray(memberImages, 4);
+    const imageGroups = chunkArray(memberImages, rowNumber);
     const [activeGroupIndex, setActiveGroupIndex] = useState<number | null>(null);        
     const [activeMember, setActiveMember] = useState<MemberImages | null>(null);
     
@@ -157,15 +159,16 @@ export default function Members() {
                 <div key={groupIndex} className = "img-row">                        
                     <div style={{
                             display: 'grid',
-                            gridTemplateColumns: 'repeat(4, 1fr)',
-                            gap: '15px',
+                            gridTemplateColumns: '4, 1fr)',
+                            gap: '5px',
                         }}>
                         {group.map(member => (
                             <img
+                                className="member-images"
                                 key={member.id}
                                 src={member.src}
                                 alt={member.alt}
-                                style={{ width: '100%', cursor: 'pointer', borderRadius: '8px' }}
+                      //          style={{ width: '100%', cursor: 'pointer', borderRadius: '8px' }}
                                 onClick={() => handleClick(groupIndex, member)}
                             />
                         ))}

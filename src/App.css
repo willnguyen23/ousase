@@ -15,10 +15,6 @@
     gap: 60px;
   }
 
-  .dropdown {
-    display: none;
-  }
-
   .logo {
     width: 10%;
   }
@@ -271,8 +267,8 @@
 
 /* Start of Exec Body */
   .img-section {
-    width: 80%;
-    display: inline;
+    width: 90%;
+    display: block;
     height: auto;
     justify-self: center;
     justify-content: center;
@@ -283,7 +279,7 @@
   }
 
   .img-row {
-    width: 80%;
+    width: 90%;
     justify-self: center;
     padding: 1%;
   }
@@ -313,9 +309,13 @@
 /* End of Exec Body */
 
 /* Toggle */
+  .dropdown {
+    display: none;
+  }
+
   #menu {
-    background: #333;
-    color: white;
+    background: #000000;
+    color: rgb(255, 255, 255);
     padding: 10px;
   }
 
@@ -334,6 +334,7 @@
   .hidden {
     display: none;
   }
+
 /* Toggle */
 
 
@@ -348,7 +349,7 @@
 
   #menu-toggle {
     display: flex;
-    width: 50%;
+    width: 100%;
     justify-content: right;
     align-self: center;
     object-fit: contain;
@@ -362,14 +363,15 @@
   }
 
   .logo {
-    width: 25%;
+    width: 50%;
+
   }
 
   .ou-sase-logo {
     display: flex;
     width: 50%;
     height: 100%;
-    justify-self: center;
+    justify-self: left;
     align-content: center;
     object-fit: contain;
   }  
@@ -392,27 +394,29 @@
   }
 
   .dropdown {
-    display: inline-block;
-    position: relative;
+    display: flex;
+    position: absolute;
   }
 
   .dropdown-toggle {
     width: 100%;
+    display: flex;
     cursor: pointer;
   }
 
   .dropdown-toggle:active {
     width: 100%;
     cursor: pointer;
-    font-size: 12px;
+    font-size: 10px;
     letter-spacing: 2px;
     text-shadow: rgb(70, 65, 65);
   }
 
   .dropdown-menu {
-    position: absolute;
-    background-color: black;
-    top: 100%;
+    display: flex;
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    top: 90%;
     left: 0;
     min-width: 160px;
     z-index: 1;
@@ -423,8 +427,16 @@
   
   .dropdown-menu li {
     list-style: none;
+    display: flex;
     width: 100%;
+    
     cursor: pointer;
+    background-color: red;
+  }
+
+  .dropdown-menu-container {
+    display: flex;
+    width: 100%;
   }
 
   .header-container {
@@ -435,7 +447,7 @@
   }
 
   .about-sase {
-    display: inline;
+    display: block;
     justify-items: center;
   }
 
@@ -447,17 +459,18 @@
 
   .sase-merch-video > video {
       object-fit: contain;
+      padding: 2%;
   }
 
   .sase-mission {
       height: 100%;
-      width: 50%;
-      margin-left: 2%;
+      display: block;
+      width: 90%;
   }
 
   .annoucements {
     display: flex;
-    padding: 0.5%;
+    padding: 0.3%;
   }
 
   .news {
@@ -487,37 +500,25 @@
 
   .img-section {
     width: 90%;
-    display: inline;
-    height: auto;
+    display: block;
     justify-self: center;
-    justify-content: center;
+    justify-items: center;
     border-color: black;
     border-left-style: solid;
     border-right-style: solid;
     margin-top: 0px;
+    background-color: green;
   }
 
   .img-row {
     width: 100%;
-    justify-self: center;
-    padding: 8%;
+    padding: 5%;
   }
 
-  .img-indiv {
-    display: grid;
-    justify-items: center;
-    padding: 2%;
-    overflow: hidden;
-    transition: max-height 0.4s ease, opacity 0.4s ease,
-  }
-
-  .img-row > img {
-    min-width: 80%;
-    width: 80%;
-    height: auto;
-    cursor: pointer;
-    position: absolute;
-    transition: max-height 0.4s ease, opacity 0.4s ease,
+  .member-images {
+    width: 100%;
+    cursor: pointer; 
+    border-radius: 8px;
   }
 
   .info-container {
@@ -525,31 +526,30 @@
     justify-items: center;
   }
 
-    #menu {
-      background: #333;
-      color: white;
-      padding: 10px;
-    }
+  #menu {
+    background: #000000;
+    color: rgb(249, 249, 249);
+    padding: 10px;
+  }
     
-    #menu ul {
-      list-style: none;
-      padding: 0;
-    }
+  #menu ul {
+    list-style: none;
+    padding: 0;
+  }
     
-    #menu ul li a {
-      color: white;
-      text-decoration: none;
-      display: block;
-      padding: 5px 0;
-    }
+  #menu ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+  }
     
-    .hidden {
-      display: none;
-    }
+  .hidden {
+    display: none;
+  }
 
-    #menu-toggle:active + .hidden {
-      display: block;
-    }
+  #menu-toggle:active + .hidden {
+    display: block;
+  }
 }
 
 
