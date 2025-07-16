@@ -341,29 +341,26 @@
   }
 
   .dropdown-menu-container {
-    display: block;
-    justify-self: left;
+    display: flex;
     position: relative;
     width: 100%;
-  /*  background-color: green; */
   }
 
   .dropdown-menu {
-    width: 50%;
+    width: 100%;
     display: block;
-    justify-self: left;
+    justify-content: center;
+    justify-self: center;
   }
 
   .dropdown-menu button {
     display: flex;
-    padding-right: 2%;
-    padding-top: 25%;
-    font-size: 100%;
-    justify-self: center;
     justify-content: right;
-    width: 200%;
-    
-  /*  background-color: red;  */
+    padding: 10%;
+    font-size: 78%;
+    width: 100%;
+    margin: 5%;
+      
     
   }
 
@@ -374,7 +371,6 @@
   .dropdown-menu li {
     list-style: none;
     width: 100%;
-
   }
 
   .logo {
