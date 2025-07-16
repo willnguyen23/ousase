@@ -297,7 +297,7 @@
     height: auto;
     cursor: pointer;
     position: absolute;
-    transition: max-height 0.4s ease, opacity 0.4s ease,
+    transition: max-height 0.4s ease, opacity 0.4s ease;
   }
 
   .member-images {
@@ -465,7 +465,7 @@
   }
 
   .img-section {
-    width: 90%;
+    width: 100%;
     display: block;
     justify-self: center;
     justify-content: center;
