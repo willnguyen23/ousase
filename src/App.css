@@ -319,47 +319,31 @@
 /* Toggle */
 
 /* Reponsive */
-@media (max-width: 600px){
+@media (max-width: 700px){
   .navbar-button {
-    display: none;
-    width: 80%;
-  }
-
-  #menu-toggle {
-    display: flex;
-    width: 100%;
-    justify-content: right;
-    align-self: center;
-    object-fit: contain;
+    display:none;
   }
 
   .dropdown {
     display: flex;
-    position: absolute;
+    position: relative;
   }
 
   .dropdown-toggle {
     width: 100%;
-    display: flex;
+    display: block;
     cursor: pointer;
-  }
-
-  .dropdown-toggle:active {
-    width: 100%;
-    cursor: pointer;
-    font-size: 10px;
-    letter-spacing: 2px;
-    text-shadow: rgb(70, 65, 65);
+    justify-items: right;
   }
 
   .dropdown-menu {
-    display: flex;
-    position: relative;
+    display: block;
+    position: absolute;
     background-color: rgb(0, 0, 0);
     top: 90%;
     left: 0;
     min-width: 160px;
-    z-index: 1;
+    z-index: ;
     padding: 0;
     margin-top: 4px;
     border-radius: 4px;
@@ -369,46 +353,34 @@
     list-style: none;
     display: flex;
     width: 100%;
-    
     cursor: pointer;
-    background-color: red;
   }
 
   .dropdown-menu-container {
-    display: flex;
+    display: block;
+    position: fixed;
     width: 100%;
-  }
-
-  #menu {
-    background: #000000;
-    color: rgb(249, 249, 249);
+    margin-top: 10px;
     padding: 10px;
   }
-    
-  #menu ul {
-    list-style: none;
-    padding: 0;
-  }
-    
-  #menu ul li a {
-    color: white;
-    text-decoration: none;
-    display: block;
-  }
-    
-  .hidden {
-    display: none;
-  }
 
-  #menu-toggle:active + .hidden {
-    display: block;
+  .header-container {
+    background-color: black;
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 10px;
+    transition: height 0.3s ease;
   }
 
   .empty-space {
-    width: 75%;
+    width: 50%;
     display: flex;
     justify-content: right;
     align-self: center;
+    flex-basis: 50%; /* Push to new line */
   }
 
   .logo {
@@ -416,12 +388,11 @@
   }
   
   .ou-sase-logo {
-    display: flex;
-    width: 50%;
-    height: 100%;
+    display: block;
+    height: 90%;
     justify-self: left;
     align-content: center;
-    object-fit: contain;
+    padding-left: 2%;
   }  
 
   button {
@@ -439,13 +410,6 @@
     font-size: 12px;
     letter-spacing: 2px;
     text-shadow: rgb(70, 65, 65);
-  }
-
-  .header-container {
-    background-color: black;
-    padding: 2%;
-    margin-bottom: 0;
-    display: flex;
   }
 
   .about-sase {
@@ -504,7 +468,7 @@
     width: 90%;
     display: block;
     justify-self: center;
-    justify-items: center;
+    justify-content: center;
     border-color: black;
     border-left-style: solid;
     border-right-style: solid;
@@ -514,6 +478,7 @@
   .img-row {
     display: block;
     justify-self: center;
+    justify-content: center;
     width: 90%; 
   }
 
