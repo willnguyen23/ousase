@@ -136,7 +136,8 @@ export default function Members() {
         return chunks;
     };
     
-    const rowAmount: number = window.innerWidth < 450 ? 3 : 4;
+    let rowAmount: number = window.innerWidth < 450 ? 3 : 4;
+    rowAmount = window.innerWidth < 350 ? 2 : rowAmount;
     const imageGroups = chunkArray(memberImages, rowAmount);
     const [activeGroupIndex, setActiveGroupIndex] = useState<number | null>(null);
     const [activeMember, setActiveMember] = useState<MemberImages | null>(null);
