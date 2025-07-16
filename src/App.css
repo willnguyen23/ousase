@@ -45,8 +45,9 @@
     text-shadow: rgb(70, 65, 65);
   }
 
-  .empty-space {
+  .empty-class {
     width: 10%;
+    display: none;
   }
 
   .header-container {
@@ -312,84 +313,81 @@
   }
 /* End of Exec Body */
 
-/* Toggle */
-  .dropdown {
-    display: none;
-  }
-/* Toggle */
-
 /* Reponsive */
 @media (max-width: 700px){
   .navbar-button {
-    display:none;
-  }
-
-  .dropdown {
-    display: flex;
-    position: relative;
-  }
-
-  .dropdown-toggle {
-    width: 100%;
-    display: block;
-    cursor: pointer;
-    justify-items: right;
-  }
-
-  .dropdown-menu {
-    display: block;
-    position: absolute;
-    background-color: rgb(0, 0, 0);
-    top: 90%;
-    left: 0;
-    min-width: 160px;
-    z-index: ;
-    padding: 0;
-    margin-top: 4px;
-    border-radius: 4px;
-  }
-  
-  .dropdown-menu li {
-    list-style: none;
-    display: flex;
-    width: 100%;
-    cursor: pointer;
-  }
-
-  .dropdown-menu-container {
-    display: block;
-    position: fixed;
-    width: 100%;
-    margin-top: 10px;
-    padding: 10px;
+    display: none;
   }
 
   .header-container {
     background-color: black;
     padding: 2%;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    padding: 10px;
-    transition: height 0.3s ease;
   }
 
-  .empty-space {
+  .empty-class {
     width: 50%;
+    display: block;
+    align-self: top;
+  }
+
+  .dropdown-toggle {
     display: flex;
     justify-content: right;
-    align-self: center;
-    flex-basis: 50%; /* Push to new line */
+    font-size: 90%;
+    width: 100%;
+    padding-top: 11%;
+    padding-right: 10%;
+  }
+
+  .dropdown-menu-container {
+    display: block;
+    justify-self: left;
+    position: relative;
+    width: 100%;
+  /*  background-color: green; */
+  }
+
+  .dropdown-menu {
+    width: 50%;
+    display: block;
+    justify-self: left;
+  }
+
+  .dropdown-menu button {
+    display: flex;
+    padding-right: 2%;
+    padding-top: 25%;
+    font-size: 100%;
+    justify-self: center;
+    justify-content: right;
+    width: 200%;
+    
+  /*  background-color: red;  */
+    
+  }
+
+  .dropdown-menu a {
+    text-decoration: none;  
+  }
+
+  .dropdown-menu li {
+    list-style: none;
+    width: 100%;
+
   }
 
   .logo {
     width: 50%;
+    height: 100%;
+    display: block;
+    float: left;
+  /*  background-color: purple; */
   }
   
   .ou-sase-logo {
     display: block;
-    height: 90%;
+    height: 100%;
     justify-self: left;
     align-content: center;
     padding-left: 2%;
@@ -465,7 +463,7 @@
   }
 
   .img-section {
-    width: 100%;
+    width: 90%;
     display: block;
     justify-self: center;
     justify-content: center;

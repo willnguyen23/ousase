@@ -14,7 +14,7 @@ export default function Header() {
                 <Link to="/"><button><b>Home</b></button></Link>
                 <Link to="/sponsor"><button><b>Sponsors</b></button></Link>
             </div>
-            <div className="empty-space">
+            <div className="empty-class">
                 <Toggle />
             </div>
         </header>  
