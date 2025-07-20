@@ -188,10 +188,9 @@
   .sase-mission {
       height: 100%;
       width: 40%;
-      margin-right: 2%;
+      margin: 2%;
       display: inline;
       justify-self: center;
-
   }
 /*End of about SASE (Video & Mission) */
 
@@ -214,15 +213,20 @@
       height: 90%;
       margin-left: 2%;
       margin-right: 2%;
-      padding: 10px;
+      padding: 1%;
       border-radius: 10px;
       border-style: dashed;
+  }
+
+  .text-box > ul > li {
+    padding: 1%;
   }
   
   .text-box > h1 {
       justify-self: center;
       background-color: white;
       border-radius: 20px;
+      text-decoration: underline;
   }
 /* End of Annoucements */
 
@@ -424,11 +428,12 @@
       height: 100%;
       display: block;
       width: 90%;
+      margin: 2%;
   }
 
   .annoucements {
     display: flex;
-    padding: 0.3%;
+    padding: 0.5%;
   }
 
   .news {
@@ -443,8 +448,8 @@
       width: 50%;
       height: 90%;
       margin-left: 2%;
-      margin-right: 2%;
-      padding: 10px;
+      margin-right: 1%;
+      padding: 1%;
       border-radius: 10px;
       border-style: dashed;
   }
@@ -548,7 +553,6 @@
     height: 100%;
     display: block;
     float: left;
-  /*  background-color: purple; */
   }
   
   .ou-sase-logo {
@@ -596,11 +600,12 @@
       height: 100%;
       display: block;
       width: 90%;
+      margin: 2%;
   }
 
   .annoucements {
     display: flex;
-    padding: 0.3%;
+    padding: 2%;
   }
 
   .news {
@@ -612,20 +617,30 @@
   .text-box {
       justify-content: center;
       align-self: center;
-      width: 50%;
+      width: 40%;
       height: 90%;
       margin-left: 2%;
       margin-right: 2%;
-      padding: 10px;
+      padding: 2%;
       border-radius: 10px;
       border-style: dashed;
   }
 
+  .text-box > ul > li {
+    padding-right: 1%;
+    font-size: 70%;
+    float: left;
+  }
+
+  .text-box > ul {
+    padding-left: 10%;
+  }
+  
   .text-box > h1 {
       justify-self: center;
       background-color: white;
       border-radius: 20px;
-      font-size: 100%;
+      font-size: 70%;
   }
 
   .img-section {
@@ -655,6 +670,36 @@
   .info-container {
     display: block;
     justify-items: center;
+  }
+}
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+ 
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+ 
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+ 
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+ 
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
   }
 }
 

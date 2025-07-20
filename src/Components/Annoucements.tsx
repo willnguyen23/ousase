@@ -5,15 +5,15 @@ export default function Annoucements() {
                 <div className="text-box">
                     <h1>UPCOMING EVENTS</h1>
                     <ul>
-                        <li>AUGUST 27TH - FIRST GBM OF THE YEAR</li>
-                        <li>AUGUST 27th - INTERN APPLITCATIONS OPEN</li>
+                        <li><u>AUGUST 27TH</u> - FIRST GBM OF THE YEAR</li>
+                        <li><u>AUGUST 27TH</u> - INTERN APPLITCATIONS OPEN</li>
                     </ul>
 
                 </div>
                 <div className="text-box">
                     <h1>DUE DATES</h1>
                         <ul>
-                            <li>SEPTEMBER 14th - INTERN APPLICATIONS DUE</li>
+                            <li><u>SEPTEMBER 14th</u> - INTERN APPLICATIONS DUE</li>
                         </ul>
                 </div>
             </div>
