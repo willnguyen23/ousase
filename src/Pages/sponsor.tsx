@@ -61,7 +61,7 @@ export default function Sponsor() {
                             <li>We brought <b>20 Exec/General Members</b> to SASE's 2025 National Convention, giving them an opportunity to network with companies and get internships. </li>
                             <li>We brought <b>30 Exec/General Members</b> to SASE's Regional Convention to help represent our chapter. </li>
                             <li>General body meetings had an average of 88 members.</li>
-                            <li>Recruited companies like EXXON Mobil and Google gave informationals to individuals that were invested in their careers.</li>
+                            <li>Recruited companies, like EXXON Mobil and Google, to give informationals to individuals that were invested in their careers.</li>
                             <li>Collaborations with UI/UX, Hacklahoma, VSA, KSA, and AASA to further build a community on campus. </li>
                         </ul>
                     </div>
