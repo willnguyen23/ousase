@@ -270,13 +270,19 @@
   /* End of socials */
 /* Footer Style */
 /* Start of Exec Body */
+  #exec-header {
+    text-align: center;
+    font-size: 300%;
+  }
+
   .img-section {
-    width: 90%;
+    width: 75%;
     display: block;
     height: auto;
     justify-self: center;
     justify-content: center;
     border-color: black;
+    border-top-style: solid;
     border-left-style: solid;
     border-right-style: solid;
     margin-top: 0px;
@@ -317,6 +323,99 @@
   }
 /* End of Exec Body */
 
+/* Start of Sponsor Page */
+  .sase-info-container {
+    display: block;
+    justify-self: center;
+    width: 65%;
+  }
+
+  .who-are-we {
+    display: block;
+    justify-items: center;
+  }
+
+  .who-are-we > img {
+    display: flex;
+    justify-self: center;
+    width: 90%;
+    padding: 2%;
+  }
+
+  .who-are-we > div {
+    width: 100%;
+    display: block;
+    padding: 2%;
+    text-align: right;
+    font-size: 110%;
+  }
+
+  .about-our-chapter {
+    display: block;
+    text-align: left;
+  }
+
+  #saseLNY {
+    display: flex;
+    justify-self: center;
+    width: 90%;
+    padding: 2%;
+  }
+
+  #natcon {
+    display: flex;
+    justify-self: center;
+    width: 90%;
+    padding: 2%;
+  }
+
+  .first-graphs {
+    display: flex;
+    width: 80%;
+    justify-self: center;
+  }
+
+  .first-graphs > img {
+    display: flex;
+    align-self: center;
+    width: 40%;
+    height: 100%;
+    padding-right: 20%;
+  }
+
+  .first-graphs > ul {
+    display: block;
+    width: 60%;
+    padding: 5%;
+  }
+
+  .second-graphs {
+    display: flex;
+    width: 80%;
+    justify-self: center;
+  }
+
+  .second-graphs > img {
+    display: flex;
+    align-self: center;
+    width: 40%;
+    height: 100%;
+    padding: 5%;
+  }
+
+  .second-graphs > ul {
+    display: block;
+    width: 60%;
+    padding-right: 20%;
+    align-self: center;
+  }
+
+  .impact ul li {
+    padding: 1%;
+  }
+
+/* End of Sponsor Page */
+
 /* Reponsive */
 @media (max-width: 700px){
   .navbar-button {
@@ -340,8 +439,9 @@
     justify-content: right;
     font-size: 90%;
     width: 100%;
-    padding-top: 11%;
+    align-items: center;
     padding-right: 10%;
+    padding-top: 12%;
   }
 
   .dropdown-menu-container {
@@ -456,9 +556,17 @@
 
   .text-box > h1 {
       justify-self: center;
+      justify-content: center;
       background-color: white;
       border-radius: 20px;
       font-size: 100%;
+  }
+
+  #exec-header {
+    margin: 2%;
+    padding: 2%;
+    text-align: center;
+    font-size: 150%;
   }
 
   .img-section {
@@ -489,6 +597,110 @@
     display: block;
     justify-items: center;
   }
+
+  /* Start of Sponsor Page */
+  .sase-info-container {
+    display: block;
+    justify-self: center;
+    width: 90%;
+  }
+
+  .who-are-we {
+    display: block;
+    justify-items: center;
+  }
+
+  .who-are-we > img {
+    display: flex;
+    justify-self: center;
+    width: 100%;
+    padding: 2%;
+  }
+
+  .who-are-we > div {
+    width: 100%;
+    display: block;
+    padding: 2%;
+    text-align: right;
+    font-size: 90%;
+  }
+
+  .about-our-chapter {
+    display: block;
+    text-align: left;
+  }
+
+  #saseLNY {
+    display: flex;
+    justify-self: center;
+    width: 100%;
+    padding: 2%;
+  }
+
+  #natcon {
+    display: flex;
+    justify-self: center;
+    width: 100%;
+    padding: 2%;
+  }
+
+  .first-graphs {
+    display: block;
+    width: 90%;
+    justify-self: center;
+  }
+
+  .first-graphs > img {
+    display: block;
+    width: 60%;
+    justify-self: center;
+    padding: 5%;
+  }
+
+  .first-graphs > ul {
+    display: flex;
+    width: 80%;
+    justify-self: center;
+  }
+
+  .second-graphs {
+    display: flex;
+    width: 90%;
+    justify-self: center;
+  }
+
+  .second-graphs > img {
+    display: block;
+    width: 60%;
+    padding: 5%;
+  }
+
+  .second-graphs > ul {
+    display: block;
+    width: 40%;
+    padding: 5%;
+  }
+
+  .impact ul li {
+    padding: 1%;
+  }
+  
+  #sase_year {
+    display: block;
+    width: 40%;
+    padding: 5%;
+  }
+  #other-engagements{
+    display: block;
+    width: 50%;
+  }
+  #minors {
+    width: 40%;
+  }
+  #sase_major {
+    width: 50%;
+  }
+/* End of Sponsor Page */
 }
 
 @media (max-width: 400px){
@@ -513,8 +725,8 @@
     justify-content: right;
     font-size: 90%;
     width: 100%;
-    padding-top: 11%;
     padding-right: 10%;
+    padding-top: 10%;
   }
 
   .dropdown-menu-container {
@@ -635,12 +847,19 @@
   .text-box > ul {
     padding-left: 10%;
   }
-  
+
   .text-box > h1 {
       justify-self: center;
       background-color: white;
       border-radius: 20px;
       font-size: 70%;
+  }
+
+  #exec-header {
+    margin: 2%;
+    padding: 2%;
+    text-align: center;
+    font-size: 150%;
   }
 
   .img-section {
