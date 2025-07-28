@@ -350,64 +350,27 @@
     font-size: 110%;
   }
 
-  .about-our-chapter {
+  .our-impact {
     display: block;
     text-align: left;
   }
 
-  #saseLNY {
+  .our-impact > img {
     display: flex;
     justify-self: center;
     width: 90%;
     padding: 2%;
   }
 
-  #natcon {
+  .future-goals {
+    float: right;
+  }
+
+  .future-goals > img {
     display: flex;
     justify-self: center;
     width: 90%;
     padding: 2%;
-  }
-
-  .first-graphs {
-    display: flex;
-    width: 80%;
-    justify-self: center;
-  }
-
-  .first-graphs > img {
-    display: flex;
-    align-self: center;
-    width: 40%;
-    height: 100%;
-    padding-right: 20%;
-  }
-
-  .first-graphs > ul {
-    display: block;
-    width: 60%;
-    padding: 5%;
-  }
-
-  .second-graphs {
-    display: flex;
-    width: 80%;
-    justify-self: center;
-  }
-
-  .second-graphs > img {
-    display: flex;
-    align-self: center;
-    width: 40%;
-    height: 100%;
-    padding: 5%;
-  }
-
-  .second-graphs > ul {
-    display: block;
-    width: 60%;
-    padding-right: 20%;
-    align-self: center;
   }
 
   .impact ul li {
