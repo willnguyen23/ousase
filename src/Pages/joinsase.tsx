@@ -1,10 +1,11 @@
 import Header from '../Components/Header'
 
-export default function Home() {
+export default function JoinSase () {
     return (
         <>
             <Header />
-            <h1>This is home.</h1>
+            <h1>Why Should You Join Sase?</h1>
         </>
     )
+
 }
