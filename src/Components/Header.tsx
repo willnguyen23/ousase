@@ -20,7 +20,7 @@ export default function Header() {
                     <Link to="/contact" className="navbar-button"><b>Contact Us</b></Link>
                 </div>
                 <div className="join-sase-container">
-                    <Link to="/joinsase"><button><b>JOIN SASE</b></button></Link>
+                <Link to="/joinsase"><button><b>JOIN SASE</b></button></Link>
                 </div>
                 <div className="toggle-container">
                     <Toggle /> 
