@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 import AboutDropdown from '../Components/AboutDropdown'
 import Toggle from '../Components/Toggle'
+import '../Styling/Header.css'
 
 export default function Header() {
     return (
