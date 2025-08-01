@@ -12,12 +12,12 @@ export default function Header() {
                     </a> 
                 </div>
                 <div className="navbar-container">
-                    <Link to="/home" className="navbar-button"><b>Home</b></Link>
-                    <Link to="/events" className="navbar-button"><b>Events</b></Link>
+                    <Link to="/" className="navbar-button"><b>Home</b></Link>    
                     <AboutDropdown />
+                    <Link to="/events" className="navbar-button"><b>Events</b></Link>
                     <Link to="/sponsor" className="navbar-button"><b>Sponsor Info</b></Link>
                     <Link to="/faq" className="navbar-button"><b>FAQ</b></Link>
-                    <Link to="/contact" className="navbar-button"><b>Contact Us</b></Link>
+                    <a href="mailto:ou@saseconnect.org" className="navbar-button"><b>Contact Us</b></a>
                 </div>
                 <div className="join-sase-container">
                 <Link to="/joinsase"><button><b>JOIN SASE</b></button></Link>

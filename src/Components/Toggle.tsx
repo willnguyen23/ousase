@@ -33,9 +33,9 @@ const DropdownButton = () => {
                       style={{display: showOverlay ? 'flex' : 'none'}}
               > ╳ </button>  
             <div className="options">
-              <Link to="/home" className="navbar-button"><b>Home</b></Link>
-              <Link to="/events" className="navbar-button"><b>Events</b></Link>
+              <Link to="/" className="navbar-button"><b>Home</b></Link>
               <AboutClick />
+              <Link to="/events" className="navbar-button"><b>Events</b></Link>
               <Link to="/sponsor" className="navbar-button"><b>Sponsor Info</b></Link>
               <Link to="/faq" className="navbar-button"><b>FAQ</b></Link>
               <Link to="/contact" className="navbar-button"><b>Contact Us</b></Link>
