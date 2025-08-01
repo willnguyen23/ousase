@@ -56,7 +56,7 @@ export default function Sponsor() {
                     </div>
                     <h2 style={{textAlign:'center'}}>With your help, we can accomplish these goals. If you are interested in sponsoring our chapter, click <a href="./Images/sponsorship_packet.pdf" target="_blank" download>here</a>.</h2>
                 </section>
-        </div>
+            </div>
         <Footer />
         </>
     )

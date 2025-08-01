@@ -4,7 +4,6 @@ import App from './App.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <div className="container"></div>
     <App />
   </StrictMode>
 )

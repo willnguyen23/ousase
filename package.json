@@ -12,9 +12,15 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@schedule-x/calendar": "^2.36.0",
+    "@schedule-x/events-service": "^2.36.0",
+    "@schedule-x/react": "^2.36.0",
+    "@schedule-x/theme-default": "^2.36.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "react-router-dom": "^7.6.3"
+    "react-router-dom": "^7.6.3",
+    "react-slick": "^0.30.3",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.30.1",
