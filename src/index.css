@@ -541,7 +541,7 @@
       width: 100%;
       font-size: 1.3vw;
       bottom: 0;
-      display: flex;
+      display: block;
       position: relative;
       border-top: solid;
       z-index: -1;
