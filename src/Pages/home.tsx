@@ -24,14 +24,14 @@ export default function Home() {
             </section>
             <section className="home-annoucement-container">
                 <h1 style={{fontFamily: 'Anton', 
-                            fontSize: '4vh',
+                            fontSize: '3vh',
                             borderBottom: 'solid',
                 }}> Announcements</h1>
                 <Annoucements />
             </section>
             <section className="home-events-container">
                 <h1 style={{fontFamily: 'Anton', 
-                            fontSize: '4vh',
+                            fontSize: '3vh',
                             borderBottom: 'solid',
                 }}> Upcoming Events </h1>
                 <Calendar />
