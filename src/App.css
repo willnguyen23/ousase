@@ -680,7 +680,7 @@
         .intro-container {
           width: 80%;
           justify-self: center;
-          justify-items: center;
+          justify-content: center;
           align-self: center;
           position: absolute;
           font-family: 'Anton';
