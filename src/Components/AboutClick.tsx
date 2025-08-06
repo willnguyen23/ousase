@@ -10,36 +10,18 @@ export default function AboutClick() {
 
     return (
         <>
-            <ul className="about-toggle">
-                <li className="expandable">
-                    <div className="toggle-click" onClick={toggleAbout}>
-                        <Link to="/about" className="navbar-button">About {isAboutOpen ? ' ' : '+'}</Link>
-                    </div>
-                        {isAboutOpen && (
-                            <ul className="submenu">
-                                <Link to="/about" className="navbar-button"><li>About Us</li></Link>
-                                <Link to="/exec" className="navbar-button"><li>Executive Board</li></Link>
-                                <Link to="/merch" className="navbar-button"><li>Merch</li></Link>
-                            </ul>
-                        )}
-                </li>
-            </ul>
+            <div className="about-toggle">
+                <div className="toggle-click" onClick={toggleAbout} style={{marginBottom: isAboutOpen ? '0vh' : '3vh'}}>
+                    <Link to="/about" className="navbar-button"> {isAboutOpen ? " - " : " + "} About </Link>
+                </div>
+                    {isAboutOpen && (
+                        <ul className="submenu">
+                            <Link to="/about" className="navbar-button"><li>About Us</li></Link>
+                            <Link to="/exec" className="navbar-button"><li>Executive Board</li></Link>
+                            <Link to="/merch" className="navbar-button"><li>Merch</li></Link>
+                        </ul>
+                    )}
+            </div>
         </>
     )
 }
-
-
-    /*
-        <div className="navbar-button" 
-             onClick={() => isOpen ? setIsOpen(false) : setIsOpen(true)} 
-        >
-            <Link to="/about" className="navbar-button"><b>About +</b></Link>
-                {isOpen && (
-                    <div className="dropdown-content">
-                        <Link to="/about" className="dropdown-item"><b>About Us</b></Link>
-                        <Link to="/exec" className="dropdown-item"><b>Executive Board</b></Link>
-                        <Link to="/merch" className="dropdown-item"><b>Merch</b></Link>
-                    </div>
-                )}
-        </div>
-    */

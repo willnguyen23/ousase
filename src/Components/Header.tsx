@@ -6,7 +6,7 @@ import '../Styling/Header.css'
 export default function Header() {
     return (
         <>
-            <header className="header-container">
+            <div className="header-container">
                 <div className="logo-container">
                     <a href="https://www.saseconnect.org/" target="_blank">
                         <img src="./Images/ou-sase-logo.png" alt="ou sase logo, link to national sase website"/>
@@ -26,7 +26,7 @@ export default function Header() {
                 <div className="toggle-container">
                     <Toggle /> 
                 </div>
-            </header>  
+            </div>  
         </>
     
     )

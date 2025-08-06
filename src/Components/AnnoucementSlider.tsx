@@ -40,8 +40,8 @@ const annoucements: Annoucements[]  = [
     {
         id: "first gbm",
         image: "./Images/gbm1.png",
-        header: "First General Body Meeting",
-        caption: "Come join us and ExxonMobil for our first general body and professional developement meeting of the semester. Soba Noodles will be served!",
+        header: "Tech Talk!",
+        caption: "Come join us for our first professional developement meeting of the semester. Food will be catered and served!",
         link: "",
         action: "Click here to apply!"
     },
@@ -51,10 +51,9 @@ export default function AnnoucementSlider() {
     let settings = {
         dots: true,
         autoplay: true,
-        centerMode: true,
         autoplaySpeed: 3000,
-        centerPadding: '0%',
         slidesToShow: 3,
+        centerPadding: '10%',
         responsive: [
             {
                 breakpoint: 2000,
@@ -64,7 +63,7 @@ export default function AnnoucementSlider() {
                 }
             },
             {
-                breakpoint: 850,
+                breakpoint: 768,
                 settings: {
                     arrows: true,
                     slidesToShow: 2,
@@ -75,23 +74,25 @@ export default function AnnoucementSlider() {
 
     return (
         <>
-            <div className="annoucement-container">    
-                    <Slider {...settings}>
-                        { 
-                            annoucements.map((item, index) => {
+            <div className="annoucement-container">  
+                <Slider {...settings}>
+                    { 
+                        annoucements.map((item, index) => {
                                 return (
-                                    <div key={index} className="indiv-annoucement">
-                                        <h1>{item.header}</h1>
-                                        <img src={item.image} />
-                                        <div style={{height: '10vh'}}>
-                                            <p>{item.caption}</p>
-                                            <p style={{paddingBottom: '10%'}}>{(item.link !== '') && <a href={item.link} target="_blank"><b>{item.action}</b></a>}</p>
-                                        </div>
+                                <div key={index} className="indiv-annoucement">
+                                    <h1>{item.header}</h1>
+                                    <img src={item.image} />
+                                    <div className = "indiv-annoucement-text">                                            
+                                        <p>{item.caption}</p>
                                     </div>
-                                )
-                            })
-                        }
-                    </Slider>     
+                                    <div className = "indiv-call-to-action">
+                                        <p>{(item.link !== '') ? <b><a href={item.link}>{item.action}</a></b> : <b style={{color: 'rgb(242, 241, 241)'}}>""</b>}</p>
+                                    </div>
+                                </div>
+                            )
+                        })
+                    }
+                </Slider>     
             </div>
         </>
     )
