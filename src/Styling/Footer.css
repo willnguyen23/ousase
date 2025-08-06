@@ -2,7 +2,6 @@
     .footer-container {
       width: 100%;
       display: flex;
-      
       bottom: 0;
       padding-bottom: 0px;
       border-top: solid;
@@ -15,6 +14,10 @@
       text-align: left;
       padding-left: 2%;
     }
+
+    .ou-sase-info h4 {
+      height: 3vh;
+    }
   
     .socials-container {
       width: 50%;
@@ -24,6 +27,7 @@
     }
   
     .socials-container h4 {
+      height: 3vh;
       padding-right: 1%;
     }
   
@@ -31,7 +35,6 @@
       display: block;
       text-align: right;
       width: 100%;
-      align-items: center;
     }
   
     .socials img {
