@@ -25,7 +25,7 @@ const DropdownButton = () => {
             </a> 
         </div>
         <div className="toggle" style={{width: showOverlay ? '50%' : '50%'}}>
-            <button onClick={toggle} id="toggle-button" style={{width: showOverlay ? '100%' : '50%'}}> 
+            <button onClick={toggle} id="toggle-button" style={{width: showOverlay ? '100%' : '50%', position: showOverlay ? 'fixed' : 'absolute'}}> 
                 {showOverlay ? "╳" : "≡"} 
             </button>
             {showOverlay && (
