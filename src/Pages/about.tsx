@@ -22,7 +22,7 @@ export default function AboutUs() {
                         <li style={{padding: '2% 0'}}> and chapters in at least <b>30 States</b></li>
                     </ul>    
                 </div>
-                <img src="./Images/regcon.png" />
+                <img src="./Images/regcon.png" loading="lazy"/>
             </section>
             <section className="about-our-chapter-container">
                 <div className="about-our-chapter-info">

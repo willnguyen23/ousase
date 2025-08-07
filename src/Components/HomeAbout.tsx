@@ -11,19 +11,19 @@ export default function HomeAbout() {
                 </div>
                 <div className="about-us-image-container">
                     <div className="about-us-images" id="culture">
-                        <img src="./Images/culture.png" />
+                        <img src="./Images/culture.png" loading="lazy"/>
                         <h3>Culture & Branding</h3>
                     </div>
                     <div className="about-us-images" id="prodev">
-                        <img src="./Images/pro-dev.png" />
+                        <img src="./Images/pro-dev.png" loading="lazy"/>
                         <h3>Professional Development</h3>
                     </div>
                     <div className="about-us-images" id="gbm">
-                        <img src="./Images/gbm.png" />
+                        <img src="./Images/gbm.png" loading="lazy"/>
                         <h3>General Body Meetings</h3>
                     </div>
                     <div className="about-us-images" id="conference">
-                        <img src="./Images/conference.png" />
+                        <img src="./Images/conference.png" loading="lazy"/>
                         <h3>Conferences</h3>
                     </div>   
                 </div>

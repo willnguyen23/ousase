@@ -170,6 +170,7 @@ export default function Members() {
                             src={member.src}
                             alt={member.alt}
                             onClick={() => handleClick(groupIndex, member)}
+                            loading="lazy"
                         />
                     ))}
                 </div>

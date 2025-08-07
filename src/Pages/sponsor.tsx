@@ -20,7 +20,7 @@ export default function Sponsor() {
                     </div>
                 </section>
                 <section className="our-impact">
-                    <img src="./Images/saseLNY.jpg" id="saseLNY"/>
+                    <img src="./Images/saseLNY.jpg" loading="lazy" id="saseLNY"/>
                     <h1>Our Impact</h1>
                     <p>Members of our executive board showcase our chapter's impact on their careers, specifically how the skills that are developed in SASE apply to our members' future. Last summer, we had executive members intern for... </p>
                     <ul>
@@ -44,7 +44,7 @@ export default function Sponsor() {
                     </ul>
                 </section>
                 <section className="future-goals">
-                    <img src="./Images/saseNatcon2025.jpg" id="natcon"></img>
+                    <img src="./Images/saseNatcon2025.jpg" loading="lazy" id="natcon"></img>
                     <div className="impact">
                         <h1>Future Goals</h1>
                         <p>This year, we plan on being ambitious. We want to do the following things.</p>

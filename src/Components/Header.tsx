@@ -9,7 +9,7 @@ export default function Header() {
             <div className="header-container">
                 <div className="logo-container">
                     <a href="https://www.saseconnect.org/" target="_blank">
-                        <img src="./Images/ou-sase-logo.png" alt="ou sase logo, link to national sase website"/>
+                        <img src="./Images/ou-sase-logo.png" loading="lazy" alt="ou sase logo, link to national sase website"/>
                     </a> 
                 </div>
                 <div className="navbar-container">
