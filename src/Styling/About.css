@@ -30,7 +30,7 @@
         width: 80%;
         flex-direction: column;
         text-align: left;
-        font-size: clamp(1rem, 1.1vw, 1rem);
+        font-size: clamp(0.9rem, 1.1vw, 1rem);
     }
     
     .about-all-sase-container img {
