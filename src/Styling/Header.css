@@ -188,7 +188,7 @@
   .all-pages {
     background-color: rgb(0, 0, 0);
     position: fixed;
-    top: 10vh;
+    top: 9vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
