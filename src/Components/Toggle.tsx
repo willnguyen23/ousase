@@ -19,7 +19,8 @@ const DropdownButton = () => {
         <div className="toggle-logo-container"
             style={{display: showOverlay ? 'none' : 'flex'}}>
             <a href="https://www.saseconnect.org/" target="_blank">
-                <img src="./Images/ou-sase-logo.png" 
+                <img src="./Images/ou-sase-logo.png"
+                loading="lazy"
                     alt="ou sase logo, link to national sase website"
                 />    
             </a> 

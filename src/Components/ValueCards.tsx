@@ -57,7 +57,7 @@ export default function ValueCards() {
             <div className="about-ouwhatr-chapter-card">
                 {activeValue && (
                     <div className="about-our-chapter-card-info">
-                        <img src={ourValues.find(v => v.id === activeValue.id)?.image} />
+                        <img src={ourValues.find(v => v.id === activeValue.id)?.image} loading="lazy" />
                         <h2>{ourValues.find(v => v.id === activeValue.id)?.value}</h2>
                         <p>{ourValues.find(v => v.id === activeValue.id)?.info}</p>
                      </div>

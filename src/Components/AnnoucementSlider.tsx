@@ -81,7 +81,7 @@ export default function AnnoucementSlider() {
                                 return (
                                 <div key={index} className="indiv-annoucement">
                                     <h1>{item.header}</h1>
-                                    <img src={item.image} />
+                                    <img src={item.image} loading="lazy" />
                                     <div className = "indiv-annoucement-text">                                            
                                         <p>{item.caption}</p>
                                     </div>

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 export default function TitleContainer() {
     return (
         <>
-            <img src="../Images/saseLNY.jpg" alt="lunar new year gbm" />
+            <img src="../Images/saseLNY.jpg" loading="lazy" alt="lunar new year gbm" />
             <div className="intro-container">
                 <div className="title-container">
                     <h1>Society of Asian Scientists and Engineers</h1>
