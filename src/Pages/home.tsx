@@ -24,14 +24,14 @@ export default function Home() {
                 <h1 style={{fontFamily: 'Anton', 
                             fontSize: '3vh',
                             borderBottom: 'solid',
+                            width: '100%',
                 }}> Upcoming Events </h1>
                 <Calendar />
             </section>
             <section className="home-vision-container">
                 <h1 style={{fontFamily: 'Anton', 
-                                fontSize: '4vh',
+                                fontSize: '3vh',
                                 borderBottom: 'solid',
-                                width: '100%',
                 }}> About Us </h1>  
                 <HomeAbout />
             </section>

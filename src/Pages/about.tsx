@@ -3,10 +3,14 @@ import Footer from '../Components/Footer'
 
 export default function AboutUs() {
     return (
-        <>
-            <div className="about-container">
-                <Header />
-            </div>
-        </>
+        <div className="about-container">
+            <Header />
+            <section>
+                    
+
+
+            </section>
+            <Footer />
+        </div>
     )
 }
