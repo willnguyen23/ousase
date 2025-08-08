@@ -29,7 +29,7 @@ export default function Calendar () {
             },
             {
                 id: 4,
-                title: "First General Body Meeting with ExxonMobil",
+                title: "First Meeting",
                 start: "2025-09-10",
                 end: "2025-09-10",
             },

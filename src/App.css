@@ -1,7 +1,8 @@
 .home-container, 
 .about-us-container,
 .exec-container,
-.merch-container {
+.merch-container,
+.events-container {
   display: flex;
   flex-direction: column;
   align-items: center;

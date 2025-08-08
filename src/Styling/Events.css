@@ -1,0 +1,102 @@
+@media (min-width: 0px) {
+    .events-calendar-container {
+        padding: 2% 0;
+        width: 80%;
+    }
+
+    .events-this-month-container {
+        width: 80%;
+    }
+
+    .events-now-container {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-content: center;
+        animation: fadeIn 0.5s ease forwards;
+    }
+
+    @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+    }
+
+    .events-now-item {
+        width: min(450px, 100%);
+        height: 50vh;
+        perspective: 1000px;
+        border-radius: 5%;
+        padding: 1%;
+        margin: 1% 0;
+    }
+
+    .front-side {
+        animation: twitch 1s linear infinite;
+        width: min(450px, 90%);
+        height: 50vh;
+        border-radius: 5%;
+        padding: 1%;
+        background-color: rgb(255, 255, 255);
+        position: relative;
+        left: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .back-side {
+        width: min(450px, 100%);
+        height: 50vh;
+        border-radius: 5%;
+        padding: 1%;
+        background-color: rgb(255, 255, 255);
+        animation: spinY 0.5s linear;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .back-side p {
+        width: 90%;
+    }
+
+    @keyframes spinY {
+        0%   { transform: rotateY(180deg); opacity: 0;}
+        100% { transform: rotateY(360deg); opacity: 1;}
+    }
+
+    @keyframes twitch {
+        0%   { transform: rotateY(0deg); }
+        20%  { transform: rotateY(-2deg); }
+        40%  { transform: rotateY(2deg); }
+        60%  { transform: rotateY(-1deg); }
+        80%  { transform: rotateY(1deg); }
+        100% { transform: rotateY(0deg); }
+    }
+
+    .events-now-image-container {
+        width: 95%;
+        height: 42vh;
+        overflow: hidden;
+        position: relative;
+        left: 2.5%;
+    }
+
+    .events-now-image-container img {
+        border-radius: 5%;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .previous-events-container {
+        width: 80%;
+    }
+}
+
