@@ -137,8 +137,9 @@ export default function Members() {
         return chunks;
     };
     
-    
-    const imageGroups = chunkArray(memberImages, 3);
+    let rowAmount: number = window.innerWidth < 450 ? 3 : 4;
+    rowAmount = window.innerWidth < 250 ? 2 : rowAmount;
+    const imageGroups = chunkArray(memberImages, rowAmount);
     const [activeGroupIndex, setActiveGroupIndex] = useState<number | null>(null);
     const [activeMember, setActiveMember] = useState<MemberImages | null>(null);
     
@@ -158,39 +159,23 @@ export default function Members() {
         <div className = "img-section">
             {imageGroups.map((group, groupIndex) => (
                 <div key={groupIndex} className = "img-row">
-                    <div style={{
-                        display: 'grid',
-                        gridTemplateColumns: `repeat(3, 1fr)`,
-                        gap: '15px',
-                    }}>
-                    {group.map(member => ( 
-                        <div style={{
-                            backgroundColor: 'white',
-                            borderRadius: '5%',
-                            padding: '2% 1%'
-                        }}> 
-                            <img
-                                className="member-images"
-                                key={member.id}
-                                src={member.src}
-                                alt={member.alt}
-                                onClick={() => handleClick(groupIndex, member)}
-                                loading="lazy"
-                            />
-                            <h3 style={{fontSize: 'clamp(2vw, 1rem, 3vw)'}}>{member.info[0]}</h3>
-                        </div>
-                    ))}
-                </div>
-    
+                    <div className = "img-item-container">
+                        {group.map(member => ( 
+                            <div className="img-indiv"> 
+                                <img
+                                    className="member-images"
+                                    key={member.id}
+                                    src={member.src}
+                                    alt={member.alt}
+                                    onClick={() => handleClick(groupIndex, member)}
+                                    loading="lazy"
+                                />
+                                <h3>{member.info[0]}</h3>
+                            </div>
+                        ))}
+                    </div>
                 {activeGroupIndex === groupIndex && activeMember && (
-                    <div style={{
-                        marginTop: '15px',
-                        padding: '20px',
-                        backgroundColor: '#f9f9f9',
-                        border: '1px solid #ddd',
-                        borderRadius: '6px',
-                    }} 
-                        className = "info-container">
+                    <div className = "info-container">
                             <h1>{activeMember.info[0]}</h1>
                             <p><strong>Position:</strong> {activeMember.info[1]}</p>
                             <p><strong>Major:</strong> {activeMember.info[2]}</p>
