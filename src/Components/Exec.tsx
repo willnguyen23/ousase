@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import '../Styling/Exec.css'
 
 interface MemberImages {
     id: string;
@@ -136,9 +137,8 @@ export default function Members() {
         return chunks;
     };
     
-    let rowAmount: number = window.innerWidth < 450 ? 3 : 4;
-    rowAmount = window.innerWidth < 250 ? 2 : rowAmount;
-    const imageGroups = chunkArray(memberImages, rowAmount);
+    
+    const imageGroups = chunkArray(memberImages, 3);
     const [activeGroupIndex, setActiveGroupIndex] = useState<number | null>(null);
     const [activeMember, setActiveMember] = useState<MemberImages | null>(null);
     
@@ -160,18 +160,25 @@ export default function Members() {
                 <div key={groupIndex} className = "img-row">
                     <div style={{
                         display: 'grid',
-                        gridTemplateColumns: `repeat(${rowAmount}, 1fr)`,
+                        gridTemplateColumns: `repeat(3, 1fr)`,
                         gap: '15px',
                     }}>
-                    {group.map(member => (
-                        <img
-                            className="member-images"
-                            key={member.id}
-                            src={member.src}
-                            alt={member.alt}
-                            onClick={() => handleClick(groupIndex, member)}
-                            loading="lazy"
-                        />
+                    {group.map(member => ( 
+                        <div style={{
+                            backgroundColor: 'white',
+                            borderRadius: '5%',
+                            padding: '2% 1%'
+                        }}> 
+                            <img
+                                className="member-images"
+                                key={member.id}
+                                src={member.src}
+                                alt={member.alt}
+                                onClick={() => handleClick(groupIndex, member)}
+                                loading="lazy"
+                            />
+                            <h3 style={{fontSize: 'clamp(2vw, 1rem, 3vw)'}}>{member.info[0]}</h3>
+                        </div>
                     ))}
                 </div>
     

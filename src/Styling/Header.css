@@ -6,6 +6,9 @@
     display: flex;
     align-items: center;
     font-family: 'Oswald';
+    position: sticky;
+    top: 0;
+    z-index: 1000;
   }
 
   .logo-container {
@@ -136,6 +139,9 @@
     justify-content: space-between;
     align-items: center;
     font-family: 'Oswald';
+    position: sticky;
+    top: 0;
+    z-index: 1000;
   }
 
   .logo-container {

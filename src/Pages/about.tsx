@@ -13,7 +13,7 @@ export default function AboutUs() {
                 <video src="./Images/sase-hype-vid.mp4" loop autoPlay muted />
             </section>
             <section className="about-all-sase-container">
-                <div>
+                <div className="about-all-sase-info">
                     <h1>What is SASE?</h1>
                     <p>The <b>Society of Asian Scientists and Engineers</b> (SASE) is an organization that was founded in 2007 with the goal of <b>helping Asian heritage scientific and engineering professionals achieve their full potential.</b> SASE is known its success in talent and leadership development in the science, engineering, and technology fields. Currently, SASE has...</p>
                     <ul style={{listStylePosition: 'inside'}}>

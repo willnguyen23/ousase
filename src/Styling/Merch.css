@@ -1,0 +1,37 @@
+@media (min-width: 769px) {
+    .merch-title-container {
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        width: 100vw;
+        height: 80vh;
+    }
+
+    .merch-title-container video {
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    .merch-title-container {
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        width: 100vw;
+        height: 70vh;
+    }
+    .merch-title-container video {
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+    }
+}
+
+.merch-info-container {
+    height: 10vh;
+}
+
+.merch-info-container h1 {
+    font-family: "Anton";
+}

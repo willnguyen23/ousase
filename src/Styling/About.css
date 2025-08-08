@@ -1,108 +1,50 @@
-@media (min-width: 769px) {
-    .about-title-container {
-        display: flex;
-        justify-content: center;
-        height: 90vh;
-        width: 100%;
-        overflow: hidden;
-    }
-    
-    .about-title-container video {
-        width: 100vw;
-        object-fit: cover;
-        object-position: 50% 100%;
-    }
-    
-    .about-all-sase-container {
-        width: 80%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: "info image";
-        align-items: center;
-        justify-content: space-between;
-        padding: 2% 0;
-    }
-    
-    .about-all-sase-container div {
-        grid-area: info;
-        display: flex;
-        justify-content: center;
-        width: 80%;
-        flex-direction: column;
-        text-align: left;
-        font-size: clamp(0.9rem, 1.1vw, 1rem);
-    }
-    
-    .about-all-sase-container img {
-        grid-area: image;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        overflow: hidden;
-    }
-
-    .about-our-chapter-container {
-        width: 80%;
-        flex-direction: column;
-    }
-
-    .about-our-chapter-info p{
-        font-size: clamp(1rem, 1vw, 1.5rem);
-        margin-bottom: 2%;
-    }
+.about-title-container {
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+    width: 100%;
+    overflow: hidden;
 }
-@media (max-width: 768px) {
-    .about-title-container {
-        display: flex;
-        justify-content: center;
-        min-height: 40vh;
-        overflow: hidden;
-    }
     
-    .about-title-container video {
-        width: 100vw;
-        object-fit: cover;
-        object-position: 50%;
-    }
+.about-title-container video {
+    width: 100vw;
+    object-fit: cover;
+    object-position: 50% 100%;
+}
     
-    .about-all-sase-container {
-        width: 90%;
-        height: auto;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        animation: rotateFromLeft 1s ease-in forwards;
-    }
+.about-all-sase-container {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2% 0;
+    gap: 10%;
+}
+    
+.about-all-sase-info {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 45%;
+    text-align: left;
+    font-size: clamp(0.9rem, 1.1vw, 1rem);
+    padding: 2% 0;
+}
+    
+.about-all-sase-container img {
+    width: max(400px, 45%);
+    padding: 2% 0;    
+}
 
-    @keyframes rotateFromLeft {
-        from {
-          transform: rotateY(-90deg);
-          opacity: 0;
-        }
-        to {
-          transform: rotateY(0deg);
-          opacity: 1;
-        }
-    }
-    
-    .about-all-sase-container div {
-        display: flex;
-        width: 90%;
-        flex-direction: column;
-        text-align: left;
-    }
-    
-    .about-all-sase-container img {
-        width: 90%;
-        padding: 2% 0;
-    }
+.about-our-chapter-container {
+    width: 80%;
+    flex-direction: column;
+}
 
-    .about-our-chapter-container {
-        width: 80%;
-        flex-direction: column;
-    }
-
-    .about-our-chapter-info {
-        
-    }
+.about-our-chapter-info p{
+    font-size: clamp(1rem, 1vw, 1.5rem);
+    margin-bottom: 2%;
 }
