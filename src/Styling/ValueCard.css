@@ -139,7 +139,7 @@
         touch-action: manipulation;
         white-space: nowrap;
         will-change: box-shadow,transform;
-        font-size: 2vw;
+        font-size: 2.5vw;
     }
 
     .value-button:focus {
@@ -192,6 +192,6 @@
 
     .about-our-chapter-card-text {
         width: 90%;
-        font-size: 2vw;
+        font-size: 3vw;
     }
 }
