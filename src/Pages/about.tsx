@@ -10,7 +10,7 @@ export default function AboutUs() {
         <div className="about-us-container">
             <Header />
             <section className="about-title-container">
-                <video src="./Images/sase-hype-vid.mp4" loop autoPlay muted />
+                <video src="./Images/sase-hype-vid.mp4" loop autoPlay muted/>
             </section>
             <section className="about-all-sase-container">
                 <div className="about-all-sase-info">

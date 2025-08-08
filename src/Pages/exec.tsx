@@ -8,7 +8,7 @@ export default function ExecMembers() {
         <div className="exec-container">
             <Header />
             <section className="exec-title-container">
-                <img src="./Images/exec2026.png" />
+                <img src="./Images/exec2026.png" loading="lazy"/>
                 <h1>Our 2025-2026 Executive Board</h1>
             </section>
             <Exec />
