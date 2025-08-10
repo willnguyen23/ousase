@@ -7,7 +7,7 @@ export default function Merch() {
         <div className="merch-container">
             <Header />
             <section className="merch-title-container">
-                <video src="./Images/sase-vid.mp4" autoPlay muted loop/>
+                <video src="./Images/sase-vid.mp4" autoPlay muted loop playsInline/>
             </section>
             <section className="merch-info-container">
                 <h1>Coming Soon...</h1>

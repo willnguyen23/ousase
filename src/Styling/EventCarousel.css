@@ -1,0 +1,72 @@
+.previous-events-container {
+	width: 80%;
+	
+}
+
+.previous-events-slider-container {
+	width: 100%;
+	overflow: hidden;
+	margin-bottom: 2%;
+	position: relative;
+	overflow: hidden;
+}
+
+.previous-events-slider-container::before,
+.previous-events-slider-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 60px; /* width of fade effect */
+  height: 100%;
+  z-index: 2;
+  pointer-events: none; /* so you can still click through */
+}
+
+.previous-events-slider-container::before {
+	left: 0;
+	background: linear-gradient(to right, rgba(242, 241, 241, 1), rgba(242, 241, 241,0));
+  }
+  
+  .previous-events-slider-container::after {
+	right: 0;
+	background: linear-gradient(to left, rgba(242, 241, 241, 1), rgba(242, 241, 241, 0));
+  }
+
+
+
+
+.previous-events-items {
+	background-color: rgb(255, 255, 255);
+	max-width: 95%;
+	height: auto;
+	box-sizing: border-box;
+	border-left: 1px solid black;
+	border-right: 1px solid;
+	border-bottom: 2px solid;
+	border-radius: 5%;
+}
+
+.previous-events-items h3 {
+	width: 80%;
+	position: relative; 
+	left: 10%;
+	height: auto;
+	font-size: clamp(1rem, 1.5vw, 1.2rem);
+}
+
+.previous-events-image-container {
+	height: 30vh;
+	width: 95%;
+	overflow: hidden;
+	position: relative;
+	left: 2.5%;
+	border-radius: 6%;
+	padding-top: 2%;
+}
+
+.previous-events-image-container img {
+	object-fit: cover;
+	object-position: center;
+	width: 100%;
+	height: 100%;
+}

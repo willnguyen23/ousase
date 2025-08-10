@@ -9,7 +9,7 @@
 
   .exec-title-container img {
     object-fit: cover;
-    object-position: 0% 10%;
+    object-position: center;
     width: 100%;
   }
 

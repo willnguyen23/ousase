@@ -12,6 +12,9 @@
         object-position: center;
         width: 100%;
     }
+    .merch-info-container {
+        height: 10vh;
+    }
 }
 @media (max-width: 768px) {
     .merch-title-container {
@@ -26,6 +29,10 @@
         object-position: center;
         width: 100%;
     }
+    .merch-info-container {
+        height: 20vh;
+    }
+    
 }
 
 .merch-info-container {

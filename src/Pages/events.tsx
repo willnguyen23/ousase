@@ -2,6 +2,7 @@ import Header from '../Components/Header'
 import Footer from '../Components/Footer'
 import Calendar from '../Components/Calendar'
 import EventsNow from '../Components/EventsNow'
+import EventCarousel from '../Components/EventPrevious'
 import '../Styling/Events.css'
 
 export default function Events() {
@@ -22,7 +23,8 @@ export default function Events() {
                     <h1 style={{fontFamily: 'Anton', 
                                 fontSize: '3vh',
                                 borderBottom: 'solid',
-                    }}> Previous Events (Spring 2025) </h1>
+                    }}> Archives (Spring 2025) </h1>
+                    <EventCarousel />
                 </section>
             <Footer />
         </div>

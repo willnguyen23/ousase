@@ -28,7 +28,7 @@
     }
 
     .events-now-item {
-        width: min(450px, 100%);
+        width: min(375px, 100%);
         height: 50vh;
         perspective: 1000px;
         border-radius: 5%;
@@ -38,13 +38,12 @@
 
     .front-side {
         animation: twitch 1s linear infinite;
-        width: min(450px, 90%);
+        width: min(450px, 100%);
         height: 50vh;
         border-radius: 5%;
         padding: 1%;
         background-color: rgb(255, 255, 255);
         position: relative;
-        left: 5%;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -63,7 +62,8 @@
     }
 
     .back-side p {
-        width: 90%;
+        width: 80%;
+        
     }
 
     @keyframes spinY {

@@ -19,7 +19,7 @@
       height: auto;
       align-self: center;
       font-family: 'Anton';
-      animation: riseUp 0.5s ease-in-out;
+      animation: riseUp 1s ease-in-out;
     }
 
     .title-container {

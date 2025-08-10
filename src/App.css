@@ -2,7 +2,8 @@
 .about-us-container,
 .exec-container,
 .merch-container,
-.events-container {
+.events-container,
+.sponsor-container {
   display: flex;
   flex-direction: column;
   align-items: center;
