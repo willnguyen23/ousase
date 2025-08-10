@@ -22,7 +22,7 @@ export default function Sponsor() {
                     <div className="who-are-we-text">
                         <p>
                             We are the <b>Society of Asian Scientists and Engineers</b> here at the University of Oklahoma. As one of the <b>largest Asian-interest and STEM-focused organizations</b> on campus, we celebrate Asian culture with our members who 
-                            come from diverse STEM and cultural backgrounds.  Our goals are to <u>cultivate professionalism</u>, <u>develop cultural awareness</u>, and <u>serve our local community</u>. Our mission is to provide our membership with the knowledge, 
+                            come from diverse STEM and cultural backgrounds.  Our goals are to <b>cultivate professionalism</b>, <b>develop cultural awareness</b>, and <b>serve our local community</b>. Our mission is to provide our membership with the knowledge, 
                             experience, and connections necessary to entering the professional world. <br /><br /> Diversity-focused organizations such as ours serve a niche but crucial role on campus.  Oklahoma, particularly Oklahoma City, served as a 
                             major destination for refugees during the Vietnam War.  These refugees, sponsored by Oklahoma’s Christian institutions, were able to establish themselves in the community thanks to the help of many generous Oklahomans.  
                             This means that the majority of our members are 1st and 2nd-generation students, along with a growing number of international students.  OU SASE builds that supportive community and safe space for individuals with these shared experiences. 
@@ -88,7 +88,7 @@ export default function Sponsor() {
                         <div className="accomplishment-item-image-container">
                             <img src="./Images/gbm1.JPG" loading="lazy" />
                         </div>
-                        <p>General body meetings had an average of 88 members.</p>
+                        <p>General body meetings had an average of 100+ members.</p>
                     </div>
                     <div className="accomplishment-item">
                         <div className="accomplishment-item-image-container">
@@ -109,7 +109,7 @@ export default function Sponsor() {
                         <div className="more-accomplishment-item-image-container">
                             <video src="./Images/engagement.mp4" autoPlay muted playsInline loop/>
                         </div>
-                        <p>Our chapter has also made about <b>200,000 engagements</b> across our social media platforms.</p>
+                        <p>Our chapter has also made about <b>200,000+ engagements</b> across our social media platforms.</p>
                     </div>
                 </div>
             </section>
