@@ -4,6 +4,10 @@
     margin-bottom: 2%;
 }
 
+.our-mission-item p {
+  line-height: 1.6;
+}
+
 .our-vision-item {
   width: 100%;
 }
@@ -25,7 +29,7 @@
 
 .about-us-images img {
   width: 90%;
-  margin: 5%;
+  margin-top: 5%;
 }
 
 .about-us-images h3 {

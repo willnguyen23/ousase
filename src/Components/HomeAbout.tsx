@@ -28,7 +28,7 @@ export default function HomeAbout() {
                     </div>   
                 </div>
                 <div className="sase-membership-interest">
-                    <p style={{paddingTop: '1%'}}>Are you interested in becoming a member? Click <Link to="/join"><b>here</b></Link> for more information.</p>
+                    <p>Are you interested in becoming a member? Click <Link to="/join"><b>here</b></Link> for more information.</p>
                 </div>
             </div>
         </>
