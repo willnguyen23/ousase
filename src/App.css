@@ -3,7 +3,8 @@
 .exec-container,
 .merch-container,
 .events-container,
-.sponsor-container {
+.sponsor-container,
+.faq-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -15,7 +16,15 @@
 
 
 
-
+/*
+home-container, 
+.about-us-container,
+.exec-container,
+.merch-container,
+.events-container,
+.sponsor-container,
+.faq-container
+*/
 
 
 

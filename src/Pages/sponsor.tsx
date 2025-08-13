@@ -18,6 +18,7 @@ export default function Sponsor() {
                             borderBottom: 'solid',
                             textAlign: 'center',
                 }}>Who Are We?</h1>
+            
                 <div className="who-are-we-content">
                     <div className="who-are-we-text">
                         <p>
@@ -125,19 +126,19 @@ export default function Sponsor() {
                         <div className="future-goals-item-image-container">
                             <img src="./Images/volunteer.png" />
                         </div>
-                        <p>Host 4 mandatory events with other organizations, including the Kaleo Foundation, ILNA, OU Food Bank, Calm Waters, Senior Homes, and Integris Hospital.</p>
+                        <p>Host 4 mandatory events with other organizations, which could include the Kaleo Foundation, ILNA, OU Food Bank, Calm Waters, Senior Homes, and Integris Hospital.</p>
                     </div>
                     <div className="future-goals-item">
                         <div className="future-goals-item-image-container">
                             <img src="./Images/internship.png" />
                         </div>
-                        <p>Increase intership turnout among our exec and general body members through funded trips to conferences and networking opportunties.</p>
+                        <p>Increase internship turnout among our executive and general body members through funded trips to conferences and networking opportunties.</p>
                     </div>
                     <div className="future-goals-item">
                         <div className="future-goals-item-image-container">
                             <img src="./Images/law.png" />
                         </div>
-                        <p>Executed an intern-led project with an Oklahoma state representative to raise awareness on policies regarding engineering and make a lasting impact.</p>
+                        <p>Execute an intern-led project with an Oklahoma state representative to raise awareness on policies regarding engineering and make a lasting impact.</p>
                     </div>
                 </div>
             <h3 style={{textAlign:'center'}}>With your help, we can accomplish these goals. If you are interested in sponsoring our chapter, click <a href="./Images/sponsorship_packet.pdf" target="_blank" download>here</a>.</h3>

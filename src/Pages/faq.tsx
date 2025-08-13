@@ -3,10 +3,10 @@ import Footer from '../Components/Footer'
 
 export default function FAQ() {
     return (
-        <>
+        <div className="faq-container">
             <Header />
-            <h1>This is faq.</h1>
+            <section className="title-container"></section>
             <Footer />
-        </>
+        </div>
     )
 }

@@ -11,18 +11,20 @@ import Merch from './Pages/merch'
 
 function App() {
     return (
-      <Router>
-        <Routes>
-          <Route path="/" element={<Home />}/>
-          <Route path="/events" element={<Events />}/>
-          <Route path="/about" element={<About />}/>
-          <Route path="/sponsor" element={<Sponsor />}/>
-          <Route path="/faq" element={<FAQ />}/>
-          <Route path="/joinsase" element={<JoinSase />}/>
-          <Route path="/exec" element={<Exec />}/>
-          <Route path="/merch" element={<Merch />}/>
-        </Routes>
-      </Router>
+      <div className="main-container">
+        <Router>
+          <Routes>
+            <Route path="/" element={<Home />}/>
+            <Route path="/events" element={<Events />}/>
+            <Route path="/about" element={<About />}/>
+            <Route path="/sponsor" element={<Sponsor />}/>
+            <Route path="/faq" element={<FAQ />}/>
+            <Route path="/joinsase" element={<JoinSase />}/>
+            <Route path="/exec" element={<Exec />}/>
+            <Route path="/merch" element={<Merch />}/>
+          </Routes>
+        </Router>
+      </div>
     )
 }
 
