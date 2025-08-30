@@ -4,9 +4,6 @@ import { Link } from "react-router-dom"
 export default function TitleContainer() {
     return (
         <>
-            <head>
-                <link rel="preload" as="image" href="../Images/saseLNY.jpg"></link>
-            </head>
             <img src="../Images/saseLNY.jpg" loading="lazy" alt="lunar new year gbm" />
             <div className="intro-container">
                 <div className="title-container">
