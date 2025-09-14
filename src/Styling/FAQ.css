@@ -1,0 +1,40 @@
+.faq-title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.faq-title-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.faq-title-container div {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    align-self: center;
+    font-family: 'Anton';
+    animation: riseUp 1s ease-in-out;
+}
+
+
+.faq-title-container div h1 {
+    font-size: clamp(2.5rem, 4vw, 4rem);
+    color: white;
+    text-shadow: 8px 5px 2px black;
+}
+
+.faq-dropdown-container {
+    width: 80%;
+}
+
+.faq-dropdown-item {
+    width: 100%;
+    border-style: solid;
+}
