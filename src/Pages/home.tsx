@@ -10,9 +10,11 @@ export default function Home() {
     return (
         <div className="home-container">
             <Header />
+        {/*
             <section className="main-image-container">
                 <TitleContainer />
             </section>
+        */}
             <section className="home-annoucement-container">
                 <h1 style={{fontFamily: 'Anton', 
                             fontSize: '3vh',

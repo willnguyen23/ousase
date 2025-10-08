@@ -13,15 +13,15 @@
 
   .logo-container {
     display: flex;
-    text-align: right;
+    text-align: left;
     align-items: center;
     width: 20vw;
     height: 10vh;
   }
 
   .logo-container img {
-    width: 40%;
-    margin-right: 10%;
+    width: 50%;
+    margin-left: 10%;
   }
 
   .navbar-container {
